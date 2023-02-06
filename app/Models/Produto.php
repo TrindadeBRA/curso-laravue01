@@ -14,4 +14,8 @@ class produto extends Model
     public function ProdutoDetalhe() {
         return $this->hasOne('App\Models\ProdutoDetalhe');
     }
+
+    public function fornecedor() {
+        return $this->belongsTo('App\Models\Fornecedor');
+    }
 }
