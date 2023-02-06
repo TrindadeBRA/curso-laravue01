@@ -46,9 +46,9 @@
                                 <td>{{ $produto->peso }}</td>
                                 <td>{{ $produto->unidade_id }}</td>
                                 
-                                <th>{{ $produto->ProdutoDetalhe->comprimento ?? '' }}</th>
-                                <th>{{ $produto->ProdutoDetalhe->altura ?? '' }}</th>
-                                <th>{{ $produto->ProdutoDetalhe->largura ?? '' }}</th>
+                                <th>{{ $produto->comprimento ?? '' }}</th>
+                                <th>{{ $produto->altura ?? '' }}</th>
+                                <th>{{ $produto->largura ?? '' }}</th>
 
 
                                 <td><a href="{{ route('produto.show', ['produto' => $produto->id ]) }}">Visualizar</a></td>
